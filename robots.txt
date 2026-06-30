@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ushatutorial.netlify.app/sitemap.xml
