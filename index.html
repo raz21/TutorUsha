@@ -732,9 +732,9 @@
             <h3 class="font-heading font-bold text-2xl text-brand-900">Enquire About Admission</h3>
             <p class="mt-2 text-sm">Fill in your details and we'll get back to you about batches and fees.</p>
 
-            <!-- Netlify-ready form -->
-            <form name="admission-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-              action="#contact" class="mt-6 space-y-4">
+            <!-- Netlify form -->
+            <form id="enquiry" name="admission-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+              action="/success.html" class="mt-6 space-y-4">
               <input type="hidden" name="form-name" value="admission-enquiry" />
               <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
 
@@ -781,6 +781,7 @@
                   class="w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500"
                   placeholder="Tell us how we can help"></textarea>
               </div>
+              <div id="enquiry-status" class="text-sm"></div>
               <button type="submit"
                 class="w-full rounded-full bg-brand-700 hover:bg-brand-800 text-white font-semibold py-3 transition">Send
                 Enquiry</button>
