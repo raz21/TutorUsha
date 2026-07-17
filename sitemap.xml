@@ -41,6 +41,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ushatutorials.netlify.app/blog-concept-clarity.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ushatutorials.netlify.app/casestudy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
