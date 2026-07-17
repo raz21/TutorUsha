@@ -1,0 +1,24 @@
+# Usha Tutorials
+
+> A trusted tuition center in Kalwa, Thane providing expert Mathematics and Science coaching for Std 3rd to 9th across CBSE, ICSE, SSC, and IB/IGCSE boards.
+
+For over 16 years, Usha Tutorials has focused on conceptual learning, small batch sizes, and personalised attention to build strong academic foundations and improve final test results by 30% to 40%.
+
+## Core Pages
+
+- [Home](https://ushatutorials.netlify.netlify.app/): Main hub showcasing our teaching philosophy, family testimonials, and campus overview.
+- [About Us](https://netlify.app): Our 16-year history, holistic teaching methods, and student development goals.
+- [Programs](https://netlify.app): Detailed breakdown of syllabus-aligned coaching for CBSE, ICSE, SSC, and IB boards.
+- [New Admission](https://netlify.app): Enquiry portal and seat registration for upcoming student batches.
+- [FAQ](https://netlify.app): Answers regarding class timings (Mon-Sat, 9 AM - 8 PM), location, and testing structures.
+- [Contact](https://netlify.app): Quick links to phone channels, physical map tracking, and email communications.
+
+## Secondary Channels
+
+- [Blog](https://netlify.app): Educational articles, study tips, and updates for parents and students.
+- [Case Study](https://netlify.app): Detailed breakdowns of student academic progress and performance success metrics.
+
+## Contact Information
+- Address: Sai Vihar CHS, Parsik Nagar, Kharegaon, Near 90 Feet Road, Kalwa, Thane, Maharashtra 400605
+- Phone: +91 81692 63169
+- Email: ushaateacher@gmail.com
