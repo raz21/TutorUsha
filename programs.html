@@ -361,7 +361,7 @@
   </main>
 
   <footer class="bg-brand-900 text-brand-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
       <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-sm">© <span id="year"></span> Usha Tutorials. All Rights Reserved. Progress through personalised learning.</p>
         <div class="flex flex-wrap gap-4 text-sm">
@@ -425,9 +425,74 @@
     })();
   </script>
   
+  <!-- Structured Data: Breadcrumb + Courses -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ushatutorials.netlify.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Programs",
+        "item": "https://ushatutorials.netlify.app/programs.html"
+      }
+    ]
+  }
+  </script>
   <script type="application/ld+json">
 {
     "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Course",
+        "@id": "https://ushatutorials.netlify.app/programs.html#cbse",
+        "name": "CBSE Tuition Classes (Std 3rd\u20139th)",
+        "description": "NCERT-based Maths and Science coaching for CBSE students, Std 3rd to 9th, with a concept-first, application-focused teaching approach.",
+        "url": "https://ushatutorials.netlify.app/programs.html#cbse",
+        "provider": { "@id": "https://ushatutorials.netlify.app/#organization" },
+        "coursePrerequisites": "Std 3rd to 9th, CBSE board",
+        "educationalLevel": "Std 3rd to 9th"
+      },
+      {
+        "@type": "Course",
+        "@id": "https://ushatutorials.netlify.app/programs.html#icse",
+        "name": "ICSE Tuition Classes (Std 3rd\u20139th)",
+        "description": "Detailed, application-based Maths and Science coaching for ICSE students, Std 3rd to 9th, with strong answer-writing practice.",
+        "url": "https://ushatutorials.netlify.app/programs.html#icse",
+        "provider": { "@id": "https://ushatutorials.netlify.app/#organization" },
+        "coursePrerequisites": "Std 3rd to 9th, ICSE board",
+        "educationalLevel": "Std 3rd to 9th"
+      },
+      {
+        "@type": "Course",
+        "@id": "https://ushatutorials.netlify.app/programs.html#ssc",
+        "name": "SSC (Maharashtra State Board) Tuition Classes (Std 3rd\u20139th)",
+        "description": "Syllabus-aligned Maths and Science coaching for SSC state board students, Std 3rd to 9th, with regular unit tests and doubt-solving.",
+        "url": "https://ushatutorials.netlify.app/programs.html#ssc",
+        "provider": { "@id": "https://ushatutorials.netlify.app/#organization" },
+        "coursePrerequisites": "Std 3rd to 9th, SSC state board",
+        "educationalLevel": "Std 3rd to 9th"
+      },
+      {
+        "@type": "Course",
+        "@id": "https://ushatutorials.netlify.app/programs.html#ib-igcse",
+        "name": "IB / IGCSE Tuition Classes (Std 3rd\u20139th)",
+        "description": "Inquiry-based Maths and Science coaching for IB and IGCSE students, Std 3rd to 9th, focused on applied, open-ended problem solving.",
+        "url": "https://ushatutorials.netlify.app/programs.html#ib-igcse",
+        "provider": { "@id": "https://ushatutorials.netlify.app/#organization" },
+        "coursePrerequisites": "Std 3rd to 9th, IB / IGCSE board",
+        "educationalLevel": "Std 3rd to 9th"
+      }
+    ]
+  },
+  {
     "@type": "EducationalOrganization",
     "@id": "https://ushatutorials.netlify.app/programs",
     "name": "Usha Tutorials",
