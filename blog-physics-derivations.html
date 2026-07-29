@@ -25,28 +25,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 500: '#3b82f6',
-              600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
-            },
-            accent: {
-              400: '#fbbf24', 500: '#f59e0b', 600: '#d97706'
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            heading: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+<link rel="stylesheet" href="styles.css" />
   <style>
     .bg-banner {
       background-image: url('images/blogbg1.jpg');
@@ -79,20 +58,38 @@
 
         <ul class="hidden md:flex items-center gap-8 font-medium text-sm">
           <li><a href="index.html" class="hover:text-brand-700 transition">Home</a></li>
-          <li><a href="programs.html" class="text-brand-700 transition">Programs</a></li>
+          <li><a href="programs.html" class="hover:text-brand-700 transition">Programs</a></li>
           <li><a href="blog.html" class="text-brand-700 transition">Blog</a></li>
           <li><a href="casestudy.html" class="hover:text-brand-700 transition">Case Study</a></li>
           <li><a href="index.html#contact" class="hover:text-brand-700 transition">Contact</a></li>
         </ul>
 
         <a href="index.html#contact" class="hidden md:inline-flex items-center rounded-full bg-accent-500 hover:bg-accent-600 text-white font-semibold text-sm px-5 py-2 transition">Get in Touch</a>
+<button id="menuBtn"
+  class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-brand-800 hover:bg-brand-50"
+  aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
       </div>
     </nav>
+    
+
+<div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
+  <ul class="px-4 py-3 space-y-1 font-medium">
+    <li><a href="index.html" class="block py-2 hover:text-brand-700">Home</a></li>
+    <li><a href="programs.html" class="block py-2 hover:text-brand-700">Programs</a></li>
+    <li><a href="blog.html" class="block py-2 text-brand-700">Blog</a></li>
+    <li><a href="casestudy.html" class="block py-2 hover:text-brand-700">Case Study</a></li>
+    <li><a href="index.html#contact" class="block py-2 hover:text-brand-700">Contact</a></li>
+  </ul>
+</div>
   </header>
 
   <main id="main">
     <section class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
-      <div class="max-w-100 mx-auto pt-24 pb-12 px-4 sm:px-6 lg:px-9 bg-banner">
+      <div class="mx-auto pt-24 pb-12 px-4 sm:px-6 lg:px-9 bg-banner">
         <a href="blog.html" class="inline-flex items-center text-sm font-semibold text-brand-100 hover:text-white">← Back to Blog</a>
         <div class="mt-6 max-w-3xl">
           <p class="inline-flex items-center rounded-full bg-white/10 border border-white/20 px-3 py-1 text-sm font-semibold">Science Exam Prep</p>
@@ -168,7 +165,24 @@
     </div>
   </footer>
 
+
   <script>
+    (function () {
+      var btn = document.getElementById('menuBtn');
+      var menu = document.getElementById('mobileMenu');
+      if (!btn || !menu) return;
+      btn.addEventListener('click', function () {
+        var open = menu.classList.toggle('hidden') === false;
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          menu.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
