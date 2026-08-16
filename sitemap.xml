@@ -76,6 +76,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://ushatutorials.netlify.app/success-stories.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ushatutorials.netlify.app/success-story-ayush-rane.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ushatutorials.netlify.app/registration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
