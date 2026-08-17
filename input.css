@@ -96,6 +96,28 @@
   pointer-events: auto;
 }
 
+.footer-col h3 {
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.footer-col h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #ffb900;
+}
+
+.footer-list li::before {
+    content: '\203A';
+  color: #ffb004;
+  padding-right: 10px;
+  font-size: 1.5em;
+  line-height: 0.9em;
+}
 
 /* 
 @theme {
