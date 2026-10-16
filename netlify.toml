@@ -1,0 +1,5 @@
+# Deploy the existing HTML, CSS, and images directly, without a framework build.
+[build]
+  base = "."
+  command = ""
+  publish = "."
